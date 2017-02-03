@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'hogwarts';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
 $route['lock/(:any)/(:any)'] = 'hogwarts/shucks';
 $route['sleep'] = 'First/zzz';
 $route['([a-zA-Z]{4})/bingo'] = 'Bingo/index';
@@ -72,4 +73,5 @@ $route['dunno'] = function() {
 };
 
 $route['show/(:num)'] = "first/gimme/$1";
+
 

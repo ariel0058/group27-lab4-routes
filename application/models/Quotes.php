@@ -55,7 +55,7 @@ class Quotes extends CI_Model {
 
     public function last()
     {
-        return $this->data[5];
+        return $this->data[sizeof($this->data)-1];
     }
 
 }
