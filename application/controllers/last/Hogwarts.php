@@ -25,3 +25,4 @@ class Hogwarts extends Application
 	}
 
 }
+
