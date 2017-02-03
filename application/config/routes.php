@@ -58,7 +58,7 @@ $route['([a-zA-Z]{4})/bingo'] = 'Bingo/index';
 
 $route['dunno'] = function() {
     
-    $dir = "../public/pix/";
+    $dir = "../data/";
     $source = scandir($dir);
     //var_dump($source);
     $num = rand(2, sizeof($source) - 1);
@@ -68,7 +68,6 @@ $route['dunno'] = function() {
     header("Content-type: image/jpeg"); 
     header('Content-Disposition: inline');
     readfile($dir . $img); // dish it
-    echo"......";
     die(); // and we don't have to go any further
 };
 
